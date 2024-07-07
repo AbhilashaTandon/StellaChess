@@ -4,16 +4,15 @@
 #include <iostream>
 
 #include "BoardDisplay.h"
+#include "Board.h"
 
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(800, 800), "SFML works!");
+    /*sf::RenderWindow window(sf::VideoMode(800, 800), "SFML works!");
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
-
     
-
     BoardDisplay display;
 
     display.init_textures();
@@ -39,7 +38,10 @@ int main()
 
         }
         window.display();
-    }
+    }*/
+
+    Board x = Board();
+    x.print();
 
     return 0;
 }
